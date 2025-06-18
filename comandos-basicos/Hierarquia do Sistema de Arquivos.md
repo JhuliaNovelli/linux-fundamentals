@@ -1,8 +1,8 @@
-	Abaixo está a lista da hierarquia dentro do sistema Linux
-    
    # Filesystem Hierarchy Standard - Hierarquia do Sistema de Arquivos
+
+   Abaixo está a lista de hierarquia dentro do sistema Linux
 	
-#📁 Diretórios Essenciais para Funcionamento do Sistema
+## 📁 Diretórios Essenciais para Funcionamento do Sistema
 
     -/bin
     Contém binários essenciais para o sistema e comandos usados por todos os usuários. Exemplo: ls, cp, mv.
@@ -16,7 +16,7 @@
     -/boot
     Contém arquivos necessários para a inicialização do sistema, como o kernel (vmlinuz) e o carregador de boot (grub).
 
-#📁 Diretórios de Configuração, Administração e Estado
+## 📁 Diretórios de Configuração, Administração e Estado
 
     -/etc
     Contém todos os arquivos de configuração do sistema e serviços. Exemplo: passwd, hosts, hostname.
@@ -30,7 +30,7 @@
     -/sys
     Outro sistema virtual, fornece informações e interfaces com o kernel, especialmente relacionadas a hardware.
 
-#📁 Diretórios de Usuário e Dados Pessoais
+## 📁 Diretórios de Usuário e Dados Pessoais
 
    -/home
     Diretórios pessoais de cada usuário comum do sistema. Ex: /home/jhulia, /home/gustavo.
@@ -38,7 +38,7 @@
     -/root
     Diretório pessoal do usuário root (superusuário). **Não confundir com /.**
 
-#📁 Diretórios de Programas e Aplicativos
+## 📁 Diretórios de Programas e Aplicativos
 
     -/usr
     Armazena dados e aplicativos do sistema usados por usuários. Inclui subdiretórios como /usr/bin, /usr/lib, /usr/share.
@@ -49,18 +49,18 @@
     -/srv
     Guarda dados usados por serviços do sistema (como FTP, HTTP, etc.).
 
-#📁 Diretórios Temporários e Montagens
+## 📁 Diretórios Temporários e Montagens
 
     -/tmp
     Armazena arquivos temporários usados por processos e aplicativos. Pode ser limpo automaticamente no reboot.
 
-    -/mnt
+    - /mnt
     Usado para montar temporariamente outros sistemas de arquivos durante manutenção ou uso pontual.
 
-   -/media
+   - /media
     Ponto automático de montagem para mídias removíveis como pendrives, HDs externos, CDs, etc.
 
-#📁 Diretórios de Dispositivos
+## 📁 Diretórios de Dispositivos
 
-    -/dev
+    - ./dev
     Contém arquivos especiais que representam dispositivos do sistema, como discos (/dev/sda), terminais (/dev/tty) e muito mais.

@@ -50,7 +50,7 @@
 
 ## 📁 Diretórios Temporários e Montagens
 
--`/tmp`
+- `/tmp`
     Armazena arquivos temporários usados por processos e aplicativos. Pode ser limpo automaticamente no reboot.
 
 - `/mnt`

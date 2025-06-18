@@ -18,16 +18,16 @@
 
 #📁 Diretórios de Configuração, Administração e Estado
 
-    /etc
+    -/etc
     Contém todos os arquivos de configuração do sistema e serviços. Exemplo: passwd, hosts, hostname.
 
-    /run
+    -/run
     Armazena dados voláteis (temporários) da sessão atual do sistema, como arquivos de PID e sockets.
 
-    /proc
+    -/proc
     Sistema de arquivos virtual que fornece informações sobre os processos ativos e o kernel.
 
-    /sys
+    -/sys
     Outro sistema virtual, fornece informações e interfaces com o kernel, especialmente relacionadas a hardware.
 
 #📁 Diretórios de Usuário e Dados Pessoais
@@ -57,7 +57,7 @@
     -/mnt
     Usado para montar temporariamente outros sistemas de arquivos durante manutenção ou uso pontual.
 
-   - /media
+   -/media
     Ponto automático de montagem para mídias removíveis como pendrives, HDs externos, CDs, etc.
 
 #📁 Diretórios de Dispositivos

@@ -4,63 +4,62 @@
 	
 ## 📁 Diretórios Essenciais para Funcionamento do Sistema
 
-    - `/bin`
+ - `/bin`
     Contém binários essenciais para o sistema e comandos usados por todos os usuários. Exemplo: ls, cp, mv.
 
-    - '/sbin'
+ - `/sbin`
     Contém binários essenciais, mas voltados para administração do sistema. Exemplo: reboot, ifconfig.
-
-    - '/lib'
+ - `/lib`
     Armazena bibliotecas compartilhadas necessárias para rodar os binários de /bin e /sbin.
 
-    - '/boot'
+- `/boot`
     Contém arquivos necessários para a inicialização do sistema, como o kernel (vmlinuz) e o carregador de boot (grub).
 
 ## 📁 Diretórios de Configuração, Administração e Estado
 
-    -/etc
+- `/etc`
     Contém todos os arquivos de configuração do sistema e serviços. Exemplo: passwd, hosts, hostname.
 
-    -/run
+- `/run`
     Armazena dados voláteis (temporários) da sessão atual do sistema, como arquivos de PID e sockets.
 
-    -/proc
+- `/proc`
     Sistema de arquivos virtual que fornece informações sobre os processos ativos e o kernel.
 
-    -/sys
+- `/sys`
     Outro sistema virtual, fornece informações e interfaces com o kernel, especialmente relacionadas a hardware.
 
 ## 📁 Diretórios de Usuário e Dados Pessoais
 
-   -/home
+-`/home`
     Diretórios pessoais de cada usuário comum do sistema. Ex: /home/jhulia, /home/gustavo.
 
-    -/root
+- `/root`
     Diretório pessoal do usuário root (superusuário). **Não confundir com /.**
 
 ## 📁 Diretórios de Programas e Aplicativos
 
-    -/usr
+- `/usr`
     Armazena dados e aplicativos do sistema usados por usuários. Inclui subdiretórios como /usr/bin, /usr/lib, /usr/share.
 
-   -/opt
+- `/opt`
     Local para instalação de softwares adicionais ou de terceiros *(como Google Chrome, por exemplo).*
 
-    -/srv
+- `/srv`
     Guarda dados usados por serviços do sistema (como FTP, HTTP, etc.).
 
 ## 📁 Diretórios Temporários e Montagens
 
-    -/tmp
+-`/tmp`
     Armazena arquivos temporários usados por processos e aplicativos. Pode ser limpo automaticamente no reboot.
 
-    - /mnt
+- `/mnt`
     Usado para montar temporariamente outros sistemas de arquivos durante manutenção ou uso pontual.
 
-   - /media
+- `/media`
     Ponto automático de montagem para mídias removíveis como pendrives, HDs externos, CDs, etc.
 
 ## 📁 Diretórios de Dispositivos
 
-    - ./dev
+- `/dev`
     Contém arquivos especiais que representam dispositivos do sistema, como discos (/dev/sda), terminais (/dev/tty) e muito mais.

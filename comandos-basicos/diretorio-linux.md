@@ -4,7 +4,7 @@
 	
 ## 📁 Diretórios Essenciais para Funcionamento do Sistema
 
-    - '/bin'
+    - `/bin`
     Contém binários essenciais para o sistema e comandos usados por todos os usuários. Exemplo: ls, cp, mv.
 
     - '/sbin'

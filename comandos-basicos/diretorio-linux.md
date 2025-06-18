@@ -1,4 +1,4 @@
-   # Filesystem Hierarchy Standard - Hierarquia do Sistema de Arquivos
+# Filesystem Hierarchy Standard - Hierarquia do Sistema de Arquivos
 
    Abaixo está a lista de hierarquia dentro do sistema Linux
 	

@@ -31,7 +31,7 @@
 
 ## 📁 Diretórios de Usuário e Dados Pessoais
 
--`/home`
+- `/home`
     Diretórios pessoais de cada usuário comum do sistema. Ex: /home/jhulia, /home/gustavo.
 
 - `/root`

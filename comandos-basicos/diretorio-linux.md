@@ -4,16 +4,16 @@
 	
 ## 📁 Diretórios Essenciais para Funcionamento do Sistema
 
-    -/bin
+    - '/bin'
     Contém binários essenciais para o sistema e comandos usados por todos os usuários. Exemplo: ls, cp, mv.
 
-    -/sbin
+    - '/sbin'
     Contém binários essenciais, mas voltados para administração do sistema. Exemplo: reboot, ifconfig.
 
-    -/lib
+    - '/lib'
     Armazena bibliotecas compartilhadas necessárias para rodar os binários de /bin e /sbin.
 
-    -/boot
+    - '/boot'
     Contém arquivos necessários para a inicialização do sistema, como o kernel (vmlinuz) e o carregador de boot (grub).
 
 ## 📁 Diretórios de Configuração, Administração e Estado

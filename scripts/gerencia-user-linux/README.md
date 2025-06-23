@@ -21,5 +21,4 @@
 | `cut -d: -f1`       | Lê o nome dos usuários do `/etc/passwd`  |
 | `usermod -aG`       | Adiciona o usuário a um grupo secundário |
 | `gpasswd -d`        | Remove o usuário de um grupo             |
-
 | `chmod +x` + arquivo| Torne o script executável                |

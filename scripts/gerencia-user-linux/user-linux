@@ -1,3 +1,5 @@
+# Script Gerenciador de Usuários Linux
+
 #!/bin/bash
 
 # Verifica se o script está sendo executado como root

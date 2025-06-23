@@ -1,63 +1,64 @@
-# Script Gerenciador de Usuários Linux
+#Script Gerenciador de Usuários Linux
+-------------------------------------------
 
-#!/bin/bash
+    #!/bin/bash
 
-# Verifica se o script está sendo executado como root
-if [[ $EUID -ne 0 ]]; then
-   echo "Este script precisa ser executado como root!"
-   exit 1
-fi
+    # Verifica se o script está sendo executado como root
+    if [[ $EUID -ne 0 ]]; then
+    echo "Este script precisa ser executado como root!"
+    exit 1
+    fi
 
-while true; do
-    echo "======================="
-    echo " Menu de Administração "
-    echo "======================="
-    echo "1 - Criar usuário"
-    echo "2 - Deletar usuário"
-    echo "3 - Listar usuários"
-    echo "4 - Adicionar usuário a um grupo"
-    echo "5 - Remover usuário de um grupo"
-    echo "6 - Sair"
-    echo -n "Escolha uma opção: "
-    read opcao
+    while true; do
+        echo "======================="
+        echo " Menu de Administração "
+        echo "======================="
+        echo "1 - Criar usuário"
+        echo "2 - Deletar usuário"
+        echo "3 - Listar usuários"
+        echo "4 - Adicionar usuário a um grupo"
+        echo "5 - Remover usuário de um grupo"
+        echo "6 - Sair"
+        echo -n "Escolha uma opção: "
+        read opcao
 
-    case $opcao in
-        1)
-            echo -n "Digite o nome do novo usuário: "
-            read usuario
-            useradd -m "$usuario" && echo "Usuário $usuario criado com sucesso!"
-            ;;
-        2)
-            echo -n "Digite o nome do usuário a ser deletado: "
-            read usuario
-            userdel -r "$usuario" && echo "Usuário $usuario deletado com sucesso!"
-            ;;
-        3)
-            echo "Lista de usuários:"
-            cut -d: -f1 /etc/passwd
-            ;;
-        4)
-            echo -n "Digite o nome do usuário: "
-            read usuario
-            echo -n "Digite o nome do grupo: "
-            read grupo
-            usermod -aG "$grupo" "$usuario" && echo "Usuário $usuario adicionado ao grupo $grupo."
-            ;;
-        5)
-            echo -n "Digite o nome do usuário: "
-            read usuario
-            echo -n "Digite o nome do grupo: "
-            read grupo
-            gpasswd -d "$usuario" "$grupo" && echo "Usuário $usuario removido do grupo $grupo."
-            ;;
-        6)
-            echo "Saindo..."
-            break
-            ;;
-        *)
-            echo "Opção inválida. Tente novamente."
-            ;;
-    esac
+        case $opcao in
+            1)
+                echo -n "Digite o nome do novo usuário: "
+                read usuario
+                useradd -m "$usuario" && echo "Usuário $usuario criado com sucesso!"
+                ;;
+            2)
+                echo -n "Digite o nome do usuário a ser deletado: "
+                read usuario
+                userdel -r "$usuario" && echo "Usuário $usuario deletado com sucesso!"
+                ;;
+            3)
+                echo "Lista de usuários:"
+                cut -d: -f1 /etc/passwd
+                ;;
+            4)
+                echo -n "Digite o nome do usuário: "
+                read usuario
+                echo -n "Digite o nome do grupo: "
+                read grupo
+                usermod -aG "$grupo" "$usuario" && echo "Usuário $usuario adicionado ao grupo $grupo."
+                ;;
+            5)
+                echo -n "Digite o nome do usuário: "
+                read usuario
+                echo -n "Digite o nome do grupo: "
+                read grupo
+                gpasswd -d "$usuario" "$grupo" && echo "Usuário $usuario removido do grupo $grupo."
+                ;;
+            6)
+                echo "Saindo..."
+                break
+                ;;
+            *)
+                echo "Opção inválida. Tente novamente."
+                ;;
+        esac
 
-    echo ""  # Linha em branco para separar
-done
+        echo ""  # Linha em branco para separar
+    done

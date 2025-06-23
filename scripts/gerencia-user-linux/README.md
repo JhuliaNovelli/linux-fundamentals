@@ -1,7 +1,7 @@
 
-#Primeiro projeto Linux
+# Primeiro projeto Linux
 
-##Criar um script interativo em Bash que permita:
+## Criar um script interativo em Bash que permita:
 
 - Criar usuários
 
@@ -12,7 +12,7 @@
 - Adicionar/remover usuários de grupos
 
 
-##Comandos utilizados
+## Comandos utilizados
 
 |    Comando          | O que faz                                |
 | --------------------|----------------------------------------- |

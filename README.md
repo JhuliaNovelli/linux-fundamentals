@@ -4,7 +4,7 @@ Este repositório contém anotações, scripts e práticas que desenvolvi durant
 
 ## 📚 Curso base
 - Formação Linux - Alura
-- Progresso: `Em andamento`
+- Progresso: `Finalizado`
 
 ## 🌱 Progresso de Estudos
 

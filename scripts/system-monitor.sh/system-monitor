@@ -1,0 +1,42 @@
+#!/bin/bash
+
+--------------------------------------------------------------
+# Script interativo para monitorar CPU, Memória, Disco e Rede
+--------------------------------------------------------------
+
+while true; do
+    clear
+    tput cup 0 10
+    echo "=== Monitor Interativo de Recursos do Sistema ==="
+
+    # CPU
+    tput cup 2 2
+    echo "[CPU]"
+    tput cup 3 4
+    top -bn1 | grep "Cpu(s)" | awk '{print "Uso de CPU: " $2 "% us, " $4 "% sy, " $8 "% id"}'
+
+    # Memória
+    tput cup 5 2
+    echo "[Memória RAM]"
+    tput cup 6 4
+    free -m | awk '/Mem:/ {print "Memória usada: " $3 " MB de " $2 " MB"}'
+
+    # Disco
+    tput cup 8 2
+    echo "[Disco (/)]"
+    tput cup 9 4
+    df -h / | awk 'NR==2 {print "Disco usado: " $3 " de " $2 " (" $5 " usados)"}'
+
+    # Rede
+    tput cup 11 2
+    echo "[Rede]"
+    tput cup 12 4
+    awk '/:/ && $1 != "lo:" {gsub(":", "", $1); 
+        printf "Recebido: %.2f MB | Enviado: %.2f MB\n", $2/1024/1024, $10/1024/1024; exit}' /proc/net/dev
+
+    # Rodapé
+    tput cup 14 2
+    echo "Atualizado: $(date +'%H:%M:%S') - Pressione Ctrl+C para sair"
+
+    sleep 15
+done

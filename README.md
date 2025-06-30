@@ -13,15 +13,15 @@ Este repositório contém anotações, scripts e práticas que desenvolvi durant
 | Introdução ao Linux              | ✅ |
 | Comandos básicos                 | ✅ |
 | Permissões de arquivos           | ✅ |
-| Gerenciamento de usuários        | 🔄 |
-| Shell Script                     | 🔄 |
-| Redes no Linux                   | 🔜 |
+| Gerenciamento de usuários        | ✅ |
+| Shell Script                     | ✅ |
+| Redes no Linux                   | ✅ |
 
 ## 📁 Organização do repositório
 
-| Pasta             | Conteúdo                                      |
-|------------------|-----------------------------------------------|
-| `comandos-basicos` | Lista de comandos úteis aprendidos           |
+| Pasta              | Conteúdo                                      |
+|--------------------|-----------------------------------------------|
+| `comandos-basicos` | Lista de comandos úteis aprendidos            |
 | `scripts`          | Scripts shell para automatizações simples     |
 | `anotações`        | Anotações detalhadas dos principais tópicos   |
 

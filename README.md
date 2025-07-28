@@ -28,3 +28,4 @@ Este repositório contém anotações, scripts e práticas que desenvolvi durant
 ## 💻 Autor
 
 Desenvolvido por [Jhulia Novelli](https://github.com/JhuliaNovelli) 👩‍💻
+Me encontre no [LinkedIn](https://www.linkedin.com/in/jhulia-novelli/)
